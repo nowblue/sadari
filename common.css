@@ -1,0 +1,195 @@
+.grid{
+    margin: 0px 6vw;
+    width: 88vw;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.grid_bar{
+    /* padding-right: 40px; */
+    width: 9vw;
+    height: 200vw;
+    background: #ff0000;
+    opacity: 10%;
+    list-style: none;
+}
+
+
+@media (min-width: 1000px) {
+	body {
+		background: #fff;
+	}
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    font-family: 'SUIT Variable', sans-serif;
+    margin: 0;
+}
+
+
+.gnb{
+    display: inline-flex;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    margin: 2vw 0 0 0;
+}
+
+.gnb li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.gnb_right{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 37.9vw;
+    padding: 0;
+    padding-right: 10.4vw;
+}
+
+.logo{
+    width: 2.5vw;
+    margin-left: 6vw;
+}
+
+.navMenu{
+    border: none;
+    background: #fff;
+    font-size: 0.9vw;
+    font-weight: 200;
+}
+
+button{
+    font-weight: 200;
+}
+
+
+
+/******************************************** main **************************************/
+
+.main_container{
+    margin: 0 6vw;
+    height: 50vw;
+}
+
+.main_text{
+    margin-top: 10vw;
+}
+
+.subTitle{
+    font-size: 3vw;
+    font-weight: 200;
+    color: #FF5E1F;
+    margin: 0;
+}
+
+.mainTitle{
+    font-size: 6vw;
+    font-weight: 800;
+    color: #FF5E1F;
+    margin: 0;
+}
+
+.subText{
+    font-size: 1.9vw;
+    font-weight: 200;
+    color: #310f0b5d;
+    margin: 0;
+}
+
+
+
+/* page1 */
+
+.page1{
+    background: #F3F3F3;
+    padding-top: 3vw;
+    padding-bottom: 12vw;
+}
+
+.list{
+    color: #FF5E1F;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.tit1{
+    margin-top: 6vw;
+    color: #FF5E1F;
+    font-size: 4.5vw;
+    font-weight: 800;
+}
+
+.page1_t{
+    margin: 0 0 0 6vw;
+}
+
+
+.page1_t .bold{
+    margin-top: 18vw;
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+.page_t .normal{
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+
+
+/* page2 */
+
+.page2{
+    padding-top: 3vw;
+    margin: 0 0 0 6vw;
+}
+
+.tit2{
+    margin-top: 6vw;
+    color: #FF5E1F;
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+.page2_t .normal{
+    margin-top: 1vw;
+    font-size: 1.15vw;
+    font-weight: 200;
+    line-height: 1.9vw;
+}
+
+.q_box{
+    margin: 4vw 0 1vw 0;
+    padding: 0 1.5vw;
+    width: 28.4vw;
+    display: inline-grid;
+    height: 4.5vw;
+    background: #FFFAF2;
+    border: 0.1vw #FF5E1F solid;
+    border-radius: 0.5vw;
+    align-items: center;
+
+}
+
+.q_box p{
+    color: #FF5E1F;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+/* .page2_text2{
+    display: inline-flex;
+} */
+
+.font_red{
+    
+}
