@@ -51,9 +51,17 @@ html {
 .gnb_right {
     display: inline-flex;
     justify-content: space-between;
-    width: 37.9vw;
+    width: 37.8vw;
     padding: 0;
     padding-right: 10.4vw;
+}
+
+.gnb_2{
+    padding-left: 1.4vw;
+}
+
+.gnb_3{
+    padding-left: 1.5vw;
 }
 
 .logo {
