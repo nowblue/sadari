@@ -5,6 +5,7 @@
     display: inline-flex;
     justify-content: space-between;
     padding: 0;
+    z-index: 1;
 }
 
 .grid_bar {
@@ -31,6 +32,11 @@ html {
     font-family: 'SUIT Variable', sans-serif;
     margin: 0;
     color: #323232;
+}
+
+.wrap{
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -832,4 +838,372 @@ button {
     color: #ffffff;
     font-size: 1.3vw;
     font-weight: 600;
+}
+
+
+
+
+
+/* page6 */
+
+.page6{
+    padding: 5vw 6vw 0vw 6vw;
+}
+
+.page6_1_top{
+    display: inline-flex;
+    align-items: center;
+}
+
+.page6 .normal{
+    font-size: 1.4vw;
+    font-weight: 200;
+}
+
+.profile{
+    display: inline-flex;
+    margin: 1.5vw 0;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-top-right-radius:1.5vw;
+    border-bottom-right-radius:1.5vw;
+    box-shadow: 0.1vw 0vw 0.3vw #C2AC9C;
+}
+
+.profileImg{
+    width: 11vw;
+}
+
+.info_area{
+    display: inline-flex;
+    padding: 1.5vw 2vw 1.5vw 2vw;
+    width: 38.4vw;
+    background: #ffffff;
+}
+
+.name_area{
+    width: 18.24vw;
+}
+
+.name_area h1{
+
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.hastag{
+    margin: 0.7vw 0;
+    font-size: 0.85vw;
+    font-weight: 200;
+    line-height: 1.1vw;
+}
+
+.name_area .font_red {
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+}
+
+.info_area .divide{
+    margin: 0 2vw;
+    width: 0.1vw;
+    height: 12vw;
+    background: #d9d9d9;
+}
+
+.goal_area .font_red{
+    margin: 1vw 0 0.7vw 0;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.goal_area .explain{
+    margin-bottom: 0.5vw;
+    font-size: 0.95vw;
+    font-weight: 300;
+}
+
+.nextBtn{
+    width: 3vw;
+    background: #FF5E1F;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-weight: 300;
+    border: none;
+    border-top-right-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+}
+
+.nextBtn:hover{
+    background: #ed5519;
+}
+
+.nextBtn2{
+    width: 3vw;
+    background: #674FDC;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-weight: 300;
+    border: none;
+    border-top-right-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+}
+
+.nextBtn2:hover{
+    background: #5a3bc3; /* hover 색상도 변경하면 좋을 것 같습니다. */
+}
+
+.painpoint{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* .point2{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+} */
+
+.painpoint_area{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 0 0 9vw;
+    padding: 2vw 3vw 0 2vw;
+    height: 13vw;
+    border: 0.13vw #FF5E1F solid;
+    border-radius: 1.5vw;
+}
+
+.painpoint .font_red{
+    margin: 0 0 0.5vw 0;
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+.painpoint .normal{
+    font-size: 0.8vw;
+    font-weight: 400;
+    line-height: 1.2vw;
+}
+
+.painpoint .divide{
+    margin: 1vw 0;
+    width: 15vw;
+    height: 0.1vw;
+    background: #d9d9d9;
+}
+
+.connector{
+    position: absolute;
+    left: 67.3vw;
+    margin-top: 18.8vw;
+    width: 4vw;
+    height: 19vw;
+    border-top: 0.13vw #FF5E1F solid;
+    border-left: 0.13vw #FF5E1F solid;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* journy map */
+
+.page6_1_bottom{
+    margin-bottom: 15vw;
+}
+
+.journyMap{
+    display: inline-flex;
+    border-top: 0.13vw #FF5E1F solid;
+    border-bottom: 0.13vw #FF5E1F solid;
+}
+
+.journy{
+    width: 28.9vw;
+}
+
+.journyMap .font_red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+    color: #FF5E1F;
+    font-size: 1.3vw;
+    font-weight: 700;
+    border-bottom: 0.13vw #FF5E1F solid;
+}
+
+.journyMap .normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFAF2;
+    height: 4vw;
+    font-size: 0.9vw;
+    font-weight: 300;
+    border-left: 0.1vw #FF5E1F solid;
+    border-right: 0.1vw #FF5E1F solid;
+    border-bottom: 0.2vw #FF5E1F solid;
+}
+
+.journyMap .side1{
+    border-left: none;
+}
+.journyMap .side3{
+    border-right: none;
+}
+
+.journyMap .font_gray{
+    margin-top: -5.5vw;
+    font-size: 0.8vw;
+    font-weight: 200;
+    line-height: 1.3vw;
+}
+
+.journyMap .font_gray2{
+    margin-top: -6.6vw;
+    font-size: 0.8vw;
+    font-weight: 200;
+    line-height: 1.3vw;
+}
+
+.graph_section1{
+    display: inline-flex;
+    width: 28.9vw;
+    border-right: 0.1vw #FF5E1F solid;
+    border-bottom: 0.1vw #FF5E1F solid;
+}
+
+.graph_section2{
+    display: inline-flex;
+    width: 28.9vw;
+    border-bottom: 0.1vw #FF5E1F solid;
+}
+
+.painBall_font{
+    margin-top: -7.6vw;
+    color: #ffffff;
+    font-size: 0.8vw;
+    font-weight: 400;
+    line-height: 1.3vw;
+    transition: all .5s ease-in-out;
+}
+
+.painBall_font2{
+    margin-top: -6vw;
+    color: #ffffff;
+    font-size: 0.8vw;
+    font-weight: 400;
+    line-height: 1.3vw;
+    transition: all .5s ease-in-out;
+}
+
+.balloon2{
+    margin-top: 1.5vw;
+    width: 13vw;
+}
+
+.balloon3{
+    margin-top: 1.1vw;
+    width: 14vw;
+    transition: all .5s ease-in-out;
+}
+
+.balloon4{
+    margin-top: 1.1vw;
+    width: 14vw;
+    transition: all .5s ease-in-out;
+}
+
+.journy .each{
+    width:14.6vw;
+}
+
+.journy .row1{
+    justify-items: center;
+    height: 10.5vw;
+    border-right: 0.1vw #FF5E1F solid;
+    border-bottom: 0.1vw #FF5E1F solid;
+}
+
+.journy .row2{
+    height: 3.45vw;
+    border-right: 0.1vw #FF5E1F solid;
+    border-bottom: 0.1vw #FF5E1F solid;
+}
+
+.journy .row3{
+    height: 3.45vw;
+    border-right: 0.1vw #FF5E1F solid;
+}
+
+.journy .row4{
+    justify-items: center;
+    height: 10.5vw;
+    border-bottom: 0.1vw #FF5E1F solid;
+}
+.journy .row5{
+    height: 3.45vw;
+    border-bottom: 0.1vw #FF5E1F solid;
+}
+.journy .row6{
+    height: 3.45vw;
+}
+
+.nextsign{
+    position: absolute;
+    color: #FF5E1F;
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+
+.journyMap .next1{
+    margin-top: 0.8vw;
+    left: 34.5vw;
+}
+
+.journyMap .next2{
+    margin-top: 0.8vw;
+    left: 63.5vw;
+}
+
+.journyMap .graphgra{
+    position: absolute;
+    margin-top: 16.5vw;
+    width: 86.7vw;
+}
+
+.journyMap .graphgra2{
+    position: absolute;
+    margin-top: 16.85vw;
+    width: 86.7vw;
+}
+
+.painBalloon{
+    display: contents;
+}
+
+.painBalloon2{
+    display: contents;
+}
+
+.changepersona2{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.info_arch .normal{
+    margin: 0 6vw 2vw 6vw;
+    font-size: 1.4vw;
+    font-weight: 200;
 }
