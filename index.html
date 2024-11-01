@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 1000px)" href="./common.css"> -->
-    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./common.css">
+<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+<link rel="stylesheet" href="./common.css">
 </head>
 
 <body>
@@ -25,16 +24,19 @@
     </ul>
     <div class="wrap">
         <header>
+            <div class="nav-area"></div>
             <nav>
                 <ul class="gnb">
-                    <li><img src="./img/logo_2.png" alt="" class="logo"></li>
+                    <li><a href="#tab0"><img src="./img/logo_2.png" alt="" class="logo"></a></li>
                     <li>
                         <ul class="gnb_right">
-                            <li><button class="navMenu gnb_1">About</button></li>
-                            <li><button class="navMenu gnb_2">Video</button></li>
-                            <li><button class="navMenu gnb_3">Contents</button></li>
-                            <li><button class="navMenu gnb_4"
-                                    onclick="location.href='https://nowblue.github.io/sadari_game/' ">Game</button></li>
+                            <li><a class="navMenu gnb_1" href="#tab1">About</a></li>
+                            <li><a class="navMenu gnb_2" href="#tab2">Video</a></li>
+                            <li><a class="navMenu gnb_3" href="#tab3">Contents</a></li>
+                            <li><a class="navMenu gnb_4"
+                                    onclick="location.href='https://nowblue.github.io/sadari_game/' ">Game
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -43,7 +45,7 @@
 
 
         <main>
-            <section class="main_container">
+            <section id="tab0" class="main_container">
                 <article class="main_text">
                     <p class="subTitle">SADARI</p>
                     <p class="mainTitle">사다리</p>
@@ -295,7 +297,7 @@
             </section>
 
 
-            <section class="page6">
+            <section class="page6" id="tab3">
                 <p class="list">Project Strategy</p>
                 <p class="normal">Persona & Journey Map</p>
                 <article class="change_persona">
@@ -629,9 +631,250 @@
             </section>
 
             <section class="info_arch">
-                <p class="normal">Persona & Journey Map</p>
-                <img src="./img/wireframe.png" alt="">
+                <p class="normal">Information Architecture</p>
+                <img src="./img/arch.svg" alt="" class="arch">
+                <div class="wireframe"></div>
             </section>
+            <svg width="1920" height="945" viewBox="0 0 1920 945" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="svg">
+                <path
+                    d="M2099.45 274.817C2074.05 261.579 2042.69 254.744 2009.59 250.502C1879.41 233.824 1768.75 251.977 1661.98 289.829C1569.09 322.761 1414.63 392.356 1467.01 468.091C1497.24 511.796 1571.6 553.638 1653.88 565.943C1703.73 573.398 1773.68 577.699 1817.64 561.842C1859.35 546.794 1838.26 518.467 1811.88 500.641C1763.01 467.608 1685.53 448.017 1616.34 433.245C1515.33 411.681 1408.89 398.258 1303.17 391.719C1232 387.317 1124.55 386.544 1055.23 395.883C971.936 405.31 946.028 430.984 945.255 458.995C948.461 554.826 1094.31 625.315 1053.05 719.094C1034.32 761.671 981.767 800.06 927.547 830.115C784.458 909.431 562.058 946.512 353.755 942.885C221.518 940.583 86.4226 921.672 -18.2238 869.941C-139.93 809.777 -202.238 723.998 -211.005 638.246C-221.533 535.264 -115.369 456.76 23.5927 401.222C74.8939 380.718 132.096 364.378 180.534 341.787C203.05 331.286 238.716 312.759 243.546 294.78C249.219 273.66 193.705 254.84 170.166 244.966C122.298 224.887 71.5623 207.441 22.2721 188.574C-52.2261 160.057 -92.4068 125.592 -74.9352 75.8451C-64.8152 47.0304 -35.2508 23.5148 -2.88199 1.71709"
+                    stroke="#FAAE5C" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" />
+            </svg>
+
+            <section class="page7">
+                <p class="list">Design System</p>
+                <div class="text_container7">
+                    <p class="tit7">“연결하다”</p>
+
+                    <p class="font_red">사다리는</p>
+                    <p class="normal">
+                        슬로건인 '일상과 안전을 연결하다'에서 영감을 받아,<br />
+                        <span class="bold">부드러운 곡선과 연결감</span>을 강조했습니다. <span class="bold">안전과 일상이 자연스럽게 연결</span>되는
+                        모습을<br />
+                        시각적으로 표현한 것으로 고객들에게 신뢰감 있는 이미지를 전달합니다.<br />
+                        우리의 서비스가 제공하는 <span class="bold">안전한 경험</span>을 상징적으로 나타냅니다.
+                    </p>
+                </div>
+
+                <section class="font_section">
+                    <article class="font_container">
+                        <article class="leftSide">
+                            <p class="font_name">SUIT</p>
+                            <div class="top">
+                                <p class="font_a f_motion">Aa</p>
+                                <p class="font_b f_motion">가</p>
+                                <p class="font_c f_motion">가</p>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    A B C D E F G H I J K L M N O P Q R S<br />
+                                    a b c d e g h j i k l m n o p q r s t u v w x y<br />
+                                    ~ ! @ # $ % ^ & * ( ) { } <>_ + = : “ ? /
+                                </p>
+                                <p>
+                                    ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ<br />
+                                    ㅏ ㅑ ㅓ ㅕ ㅗ ㅛ ㅜ ㅠ ㅡ ㅣ ㅐ ㅔ ㅚ ㅟ<br />
+                                    가 나 다 라 마 바 사 아 자 차 카 타 파 하
+                                </p>
+                            </div>
+                        </article>
+                        <article class="rightSide">
+                            <div class="rs_top">
+                                <p class="font_red">Fonts</p>
+                                <p class="normal">
+                                    위험을 알리는 색인 주황을 기준으로 활기찬 디자인과 강조를 위해<br />
+                                    보조 색상으로 보라색을 사용했습니다.
+                                </p>
+                            </div>
+                            <div class="rs_bottom">
+                                <div class="font_ex1">
+                                    <p class="weight">Thin</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex2 font_down">
+                                    <p class="weight">ExtraLight</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex3 font_down">
+                                    <p class="weight">Light</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex4 font_down">
+                                    <p class="weight">Regular</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex5 font_down">
+                                    <p class="weight">Medium</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex6 font_down">
+                                    <p class="weight">Semi Bold</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex7 font_down">
+                                    <p class="weight">Bold</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex8 font_down">
+                                    <p class="weight">ExtraBold</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                                <div class="font_ex9 font_down">
+                                    <p class="weight">Heavy</p>
+                                    <p>일상과 안전을 연결하는 ‘사다리’ 입니다.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                </section>
+                <section class="color_section">
+                    <div class="colorBar">
+                        <div class="colorPick cBBack1">
+                            <div class="color_code">
+                                <h1>Giant<br /> Orange</h1>
+                                <div class="c_info">
+                                    <div>
+                                        <p>HEX</p>
+                                        <p>CMYK</p>
+                                        <p>RGB</p>
+                                    </div>
+                                    <div>
+                                        <p>255, 94, 31</p>
+                                        <p>#FF5E1F</p>
+                                        <p>0, 63, 88, 0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colorPick cBBack2">
+                            <div class="color_code">
+                                <h1>Majorelle<br /> Blue</h1>
+                                <div class="c_info">
+                                    <div>
+                                        <p>HEX</p>
+                                        <p>CMYK</p>
+                                        <p>RGB</p>
+                                    </div>
+                                    <div>
+                                        <p>103, 79, 220</p>
+                                        <p>#674FDC</p>
+                                        <p>53, 64, 0, 14</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colorPick cBBack3">
+                            <div class="color_code">
+                                <h1>Zinnwaldite<br /> Brown</h1>
+                                <div class="c_info">
+                                    <div>
+                                        <p>HEX</p>
+                                        <p>CMYK</p>
+                                        <p>RGB</p>
+                                    </div>
+                                    <div>
+                                        <p>49, 15, 11</p>
+                                        <p>#310F0B</p>
+                                        <p>0, 69, 78, 81</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colorPick cBBack4">
+                            <div class="color_code">
+                                <h1>Bright<br /> Gray</h1>
+                                <div class="c_info">
+                                    <div>
+                                        <p>HEX</p>
+                                        <p>CMYK</p>
+                                        <p>RGB</p>
+                                    </div>
+                                    <div>
+                                        <p>234, 234, 234</p>
+                                        <p>#EAEAEA</p>
+                                        <p>0, 0, 0, 8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colorPick cBBack5">
+                            <div class="color_code">
+                                <h1>Silver<br /> Sand</h1>
+                                <div class="c_info">
+                                    <div>
+                                        <p>HEX</p>
+                                        <p>CMYK</p>
+                                        <p>RGB</p>
+                                    </div>
+                                    <div>
+                                        <p>194, 194, 194</p>
+                                        <p>#C2C2C2</p>
+                                        <p>0, 0, 0, 24</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colorPick cBBack6">
+                            <div class="color_code">
+                                <h1>Taupe<br /> Gray</h1>
+                                <div class="c_info">
+                                    <div>
+                                        <p>HEX</p>
+                                        <p>CMYK</p>
+                                        <p>RGB</p>
+                                    </div>
+                                    <div>
+                                        <p>136, 136, 136</p>
+                                        <p>#888888</p>
+                                        <p>0, 0, 0, 47</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font_red">Color</p>
+                    <p class="normal">
+                        위험을 알리는 색인 주황을 기준으로 활기찬 디자인과 강조를 위해<br />
+                        보조 색상으로 보라색을 사용했습니다.
+                    </p>
+                </section>
+            </section>
+            <section class="page7_2">
+                <section class="logo_section">
+                    <article>
+                    <p class="font_red">Logo</p>
+                    <p class="normal">
+                        서비스 이름을 반영해 사다리 모양을 형상화합니다. <br />
+                        안전과 일상을 연결한다는 의미를 담아 이어진 선을 활용하여 디자인 하였습니다. <br />
+                        고객에게 신뢰와 안정감을 제공하고자 하는 의지를 표현합니다.
+                    </p>
+                    </article>
+                    <article class="img_section">
+                        <div>
+                            <img src="./img/logo_main.png" alt="" class="logo_mainImg">
+                            <img src="./img/logo_main_line.png" alt="" class="logo_lineImg">
+                        </div>
+                        <div class="logo_variation">
+                            <img src="./img/logo_sort1.png" alt="" class="logo_sort1">
+                            <img src="./img/logo_sort2.png" alt="" class="logo_sort2">
+                            <img src="./img/logo_sort3.png" alt="" class="logo_sort3">
+                            <img src="./img/logo_sort4.png" alt="" class="logo_sort4">
+                            <img src="./img/logo_sort5.png" alt="" class="logo_sort5">
+                            <img src="./img/logo_sort6.png" alt="" class="logo_sort6">
+                        </div>
+                        
+                    </article>
+                </section>
+                <section class="icon_section">
+
+                </section>
+
+                <section class="character_section">
+
+                </section>
+            </section>
+
 
 
         </main>
@@ -640,9 +883,13 @@
         <footer>
 
         </footer>
+    </div>
 
 
-        <script src="./common.js"></script>
+
+
+
+    <script src="./common.js"></script>
     </div>
 </body>
 
