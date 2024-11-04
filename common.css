@@ -1686,6 +1686,7 @@ main {
 }
 
 .journy .row1 {
+    display: grid;
     justify-items: center;
     height: 10.5vw;
     border-right: 0.1vw #FF5F1F solid;
