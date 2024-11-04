@@ -1620,14 +1620,14 @@ main {
 }
 
 .journyMap .font_gray {
-    margin-top: -5.5vw;
+    margin-top: -6.5vw;
     font-size: 0.8vw;
     font-weight: 200;
     line-height: 1.3vw;
 }
 
 .journyMap .font_gray2 {
-    margin-top: -6.6vw;
+    margin-top: -7vw;
     font-size: 0.8vw;
     font-weight: 200;
     line-height: 1.3vw;
@@ -1656,7 +1656,7 @@ main {
 }
 
 .painBall_font2 {
-    margin-top: -6vw;
+    margin-top: -6.5vw;
     color: #ffffff;
     font-size: 0.8vw;
     font-weight: 400;
@@ -1705,6 +1705,7 @@ main {
 }
 
 .journy .row4 {
+    display: grid;
     justify-items: center;
     height: 10.5vw;
     border-bottom: 0.1vw #FF5F1F solid;
@@ -1808,14 +1809,14 @@ main {
     margin-bottom: 0.5vw;
     color: #FF5F1F;
     font-size: 1.5vw;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .page7 .normal {
     color: #817A7A;
     font-size: 1.2vw;
     font-weight: 200;
-    line-height: 1.4vw;
+    line-height: 1.7vw;
 }
 
 .page7 .normal .font_bold {
