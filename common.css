@@ -1805,11 +1805,16 @@ main {
 
 }
 
-.page7 .font_red {
+.page7 .font_red2 {
     margin-bottom: 0.5vw;
     color: #FF5F1F;
     font-size: 1.5vw;
     font-weight: 800;
+}
+
+.page7 .font_red {
+    margin-bottom: 0.5vw;
+    font-weight: 400;
 }
 
 .page7 .normal {
