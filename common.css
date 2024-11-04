@@ -1,6 +1,4 @@
 
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -125,7 +123,8 @@ main {
     position: relative;
     z-index: 2;
     /* background: #FFFDFC; */
-
+    width: 100vw;
+    overflow: hidden;
 }
 
 .main_container {
@@ -181,20 +180,39 @@ main {
     z-index: 2;
 }
 
-.connect1{
+.con1{
     position: absolute;
     margin: -5.95vw 0 0 4.9vw;
-    width: 90vw;
+    width: 89vw;
     height: 0.2vw;
     background: #FF5F1F;
 }
 
-.connect2{
+.con2{
     position: absolute;
     margin: -3.6vw 0 0 -6vw;
-    width: 6.1vw;
+    width: 6.2vw;
     height: 0.2vw;
     background: #FF5F1F;
+}
+
+.connect1{
+    position: absolute;
+    margin: -5.95vw 0 0 4.9vw;
+    width: 4vw;
+    height: 0.2vw;
+    border-top: 0.13vw #FF5F1F solid;
+    border-left: 0.13vw #FF5F1F solid;
+}
+
+.connect2{
+    position: absolute;
+    margin: -3.6vw 0 0 -0.9vw;
+    width: 9.9vw;
+    height: 0.2vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
@@ -325,7 +343,6 @@ main {
 .page2 .rolling_img.list2 {
     position: absolute;
     left: 100%;
-    /* list2가 정확하게 첫 번째 리스트의 끝에 위치 */
     margin-left: 53vw;
 }
 
@@ -338,7 +355,6 @@ main {
     margin-right: 1vw;
 }
 
-/* 자연스럽게 반복되는 애니메이션 */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -567,7 +583,7 @@ main {
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
     color: #ffffff;
-    animation: graphIncrease 2s 1 ease-in-out forwards;
+    animation: graphIncrease 2s 5 ease-in-out forwards;
 }
 
 .barchart2 span {
@@ -584,7 +600,7 @@ main {
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
     color: #929292;
-    animation: graphIncrease2 2s 1 ease-in-out forwards;
+    animation: graphIncrease2 2s 5 ease-in-out forwards;
 }
 
 .barchart3 span {
@@ -601,7 +617,7 @@ main {
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
     color: #929292;
-    animation: graphIncrease3 2s 1 ease-in-out forwards;
+    animation: graphIncrease3 2s 5 ease-in-out forwards;
 }
 
 /* .barchart.animate span,
@@ -776,7 +792,7 @@ main {
 
 .barchart4 span {
     height: 85%;
-    animation: graphIncrease4 1s ease-in-out;
+    animation: graphIncrease4 2s 5 ease-in-out;
 }
 
 .barchart5 {
@@ -785,7 +801,7 @@ main {
 
 .barchart5 span {
     height: 52%;
-    animation: graphIncrease5 1s 1 ease-in-out;
+    animation: graphIncrease5 2s 5 ease-in-out;
 }
 
 .barchart6 {
@@ -794,7 +810,7 @@ main {
 
 .barchart6 span {
     height: 72%;
-    animation: graphIncrease6 1s 1 ease-in-out;
+    animation: graphIncrease6 2s 5 ease-in-out;
 }
 
 .barchart7 {
@@ -803,7 +819,7 @@ main {
 
 .barchart7 span {
     height: 90%;
-    animation: graphIncrease7 1s 1 ease-in-out;
+    animation: graphIncrease7 2s 5 ease-in-out;
 }
 
 .barchart8 {
@@ -812,7 +828,7 @@ main {
 
 .barchart8 span {
     height: 88%;
-    animation: graphIncrease8 1s 1 ease-in-out;
+    animation: graphIncrease8 2s 5 ease-in-out;
 }
 
 @keyframes graphIncrease4 {
@@ -890,9 +906,7 @@ main {
 .scroll_container {
     display: inline-flex;
     overflow-x: auto;
-    /* 가로 스크롤을 허용 */
     overflow-y: hidden;
-    /* 세로 스크롤을 숨김 */
     width: 94vw;
     height: 22vw;
 }
@@ -1449,7 +1463,6 @@ main {
 }
 
 .name_area h1 {
-
     font-size: 2vw;
     font-weight: 800;
 }
@@ -1467,6 +1480,13 @@ main {
     line-height: 1.5vw;
 }
 
+.name_area .font_blue {
+    font-size: 1vw;
+    font-weight: 700;
+    line-height: 1.5vw;
+    color: #674FDC;
+}
+
 .info_area .divide {
     margin: 0 2vw;
     width: 0.1vw;
@@ -1478,6 +1498,15 @@ main {
     margin: 1vw 0 0.7vw 0;
     font-size: 1.1vw;
     font-weight: 600;
+
+}
+
+.goal_area .font_blue {
+    margin: 1vw 0 0.7vw 0;
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #674FDC;
+
 }
 
 .goal_area .explain {
@@ -1514,10 +1543,9 @@ main {
 
 .nextBtn2:hover {
     background: #5a3bc3;
-    /* hover 색상도 변경하면 좋을 것 같습니다. */
 }
 
-.painpoint {
+.point1, .point2 {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -1539,10 +1567,27 @@ main {
     border-radius: 1.5vw;
 }
 
+.painpoint_areaB {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 0 0 9vw;
+    padding: 2vw 3vw 0 2vw;
+    height: 13vw;
+    border: 0.13vw #5a3bc3 solid;
+    border-radius: 1.5vw;
+}
+
 .painpoint .font_red {
     margin: 0 0 0.5vw 0;
     font-size: 1vw;
     font-weight: 800;
+}
+
+.painpoint .font_blue {
+    margin: 0 0 0.5vw 0;
+    font-size: 1vw;
+    font-weight: 800;
+    color: #674FDC;
 }
 
 .painpoint .normal {
@@ -1560,15 +1605,34 @@ main {
 
 .connector {
     position: absolute;
-    left: 67.3vw;
-    margin-top: 18.8vw;
-    width: 4vw;
+    left: 63.3vw;
+    margin-top: -7.7vw;
     height: 19vw;
-    border-top: 0.13vw #FF5F1F solid;
-    border-left: 0.13vw #FF5F1F solid;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: all 0.3s ease-in-out;
+}
+
+.connect_line1{
+    display: inline-flex;
+    width: 4vw;
+    height: 15.5vw;
+    border-bottom: 0.13vw #674FDC solid;
+    border-right: 0.13vw #674FDC solid;
+}
+
+.connect_line2{
+    display: inline-flex;
+    width: 5vw;
+    height: 15.5vw;
+    border-top: 0.13vw #674FDC solid;
+}
+
+.connect_line3{
+    display: inline-flex;
+    width: 4vw;
+    height: 3.5vw;
+    border-left: 0.13vw #674FDC solid;
 }
 
 /* journy map */
@@ -1581,6 +1645,12 @@ main {
     display: inline-flex;
     border-top: 0.13vw #FF5F1F solid;
     border-bottom: 0.13vw #FF5F1F solid;
+}
+
+.jMB {
+    display: inline-flex;
+    border-top: 0.13vw #5a3bc3 solid;
+    border-bottom: 0.13vw #5a3bc3 solid;
 }
 
 .journy {
@@ -1598,6 +1668,17 @@ main {
     border-bottom: 0.13vw #FF5F1F solid;
 }
 
+.jMB .font_blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+    color: #5a3bc3;
+    font-size: 1.3vw;
+    font-weight: 700;
+    border-bottom: 0.13vw #5a3bc3 solid;
+}
+
 .journyMap .normal {
     display: flex;
     justify-content: center;
@@ -1609,6 +1690,19 @@ main {
     border-left: 0.1vw #FF5F1F solid;
     border-right: 0.1vw #FF5F1F solid;
     border-bottom: 0.2vw #FF5F1F solid;
+}
+
+.jMB .normal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFAF2;
+    height: 4vw;
+    font-size: 0.9vw;
+    font-weight: 300;
+    border-left: 0.1vw #5a3bc3 solid;
+    border-right: 0.1vw #5a3bc3 solid;
+    border-bottom: 0.2vw #5a3bc3 solid;
 }
 
 .journyMap .side1 {
@@ -1640,10 +1734,23 @@ main {
     border-bottom: 0.1vw #FF5F1F solid;
 }
 
+.graph_section1B {
+    display: inline-flex;
+    width: 28.9vw;
+    border-right: 0.1vw #5a3bc3 solid;
+    border-bottom: 0.1vw #5a3bc3 solid;
+}
+
 .graph_section2 {
     display: inline-flex;
     width: 28.9vw;
     border-bottom: 0.1vw #FF5F1F solid;
+}
+
+.graph_section2B {
+    display: inline-flex;
+    width: 28.9vw;
+    border-bottom: 0.1vw #5a3bc3 solid;
 }
 
 .painBall_font {
@@ -1693,15 +1800,31 @@ main {
     border-bottom: 0.1vw #FF5F1F solid;
 }
 
+.jB .row1 {
+    border-right: 0.1vw #5a3bc3 solid;
+    border-bottom: 0.1vw #5a3bc3 solid;
+}
+
 .journy .row2 {
     height: 3.45vw;
     border-right: 0.1vw #FF5F1F solid;
     border-bottom: 0.1vw #FF5F1F solid;
 }
 
+.jB .row2 {
+    height: 3.45vw;
+    border-right: 0.1vw #5a3bc3 solid;
+    border-bottom: 0.1vw #5a3bc3 solid;
+}
+
 .journy .row3 {
     height: 3.45vw;
     border-right: 0.1vw #FF5F1F solid;
+}
+
+.jB .row3 {
+    height: 3.45vw;
+    border-right: 0.1vw #5a3bc3 solid;
 }
 
 .journy .row4 {
@@ -1711,9 +1834,21 @@ main {
     border-bottom: 0.1vw #FF5F1F solid;
 }
 
+.jB .row4 {
+    display: grid;
+    justify-items: center;
+    height: 10.5vw;
+    border-bottom: 0.1vw #5a3bc3 solid;
+}
+
 .journy .row5 {
     height: 3.45vw;
     border-bottom: 0.1vw #FF5F1F solid;
+}
+
+.jB .row5 {
+    height: 3.45vw;
+    border-bottom: 0.1vw #5a3bc3 solid;
 }
 
 .journy .row6 {
@@ -1723,6 +1858,13 @@ main {
 .nextsign {
     position: absolute;
     color: #FF5F1F;
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+
+.nextsignB {
+    position: absolute;
+    color: #5a3bc3;
     font-size: 1.8vw;
     font-weight: 300;
 }
@@ -1800,8 +1942,12 @@ main {
 /* design system */
 
 .page7 {
-    padding: 0 6vw;
     background: #FFFDFC;
+
+}
+
+.page7 .list{
+    padding: 0 6vw;
 
 }
 
@@ -1815,6 +1961,10 @@ main {
 .page7 .font_red {
     margin-bottom: 0.5vw;
     font-weight: 400;
+}
+
+.text_container7{
+    padding: 0 6vw;
 }
 
 .page7 .normal {
@@ -1858,6 +2008,7 @@ main {
 
 .font_section {
     margin-top: 4vw;
+    padding: 0 6vw;
 }
 
 .font_name {
@@ -2028,6 +2179,8 @@ main {
 
 .color_section {
     margin: 8vw 0 10vw 0;
+    padding: 0 6vw;
+
 }
 
 .color_section .font_red {
@@ -2135,12 +2288,9 @@ main {
 
 
 
-/* .page7_2{
-
-} */
 
 .logo_section {
-    padding: 8vw 0 5vw 0vw;
+    padding: 8vw 6vw 5vw 6vw;
     background: #FFFDFC;
     /* background: #F3F3F3; */
 }
@@ -2246,7 +2396,6 @@ main {
 .icon_section .rolling_list .rolling_img.list2 {
     position: absolute;
     left: 100%;
-    /* list2가 정확하게 첫 번째 리스트의 끝에 위치 */
     margin-left: 8vw;
 }
 
@@ -2259,14 +2408,12 @@ main {
 .icon_section .rolling_list2 .list2 {
     position: absolute;
     left: 100%;
-    /* list2가 정확하게 첫 번째 리스트의 끝에 위치 */
     margin-left: 8vw;
 }
 
 .icon_section .rolling_list2 .list3 {
     position: absolute;
     left: 100%;
-    /* list2가 정확하게 첫 번째 리스트의 끝에 위치 */
     margin-left: -5vw;
 }
 
@@ -2279,7 +2426,6 @@ main {
     margin-right: 1vw;
 }
 
-/* 자연스럽게 반복되는 애니메이션 */
 @keyframes scrollReverse {
     0% {
         transform: translateX(-100%);
@@ -2352,12 +2498,11 @@ main {
 }
 
 .charslide article{
-    /* margin-left: 6vw; */
     display: inline-flex;
-    overflow-x: auto; /* 수평 스크롤 활성화 */
-    scroll-snap-type: x mandatory; /* 스냅 효과 */
-    width: 94vw; /* 섹션 너비를 100%로 설정 */
-    box-sizing: border-box; /* 패딩 포함하여 전체 너비 계산 */
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    width: 94vw; 
+    box-sizing: border-box; 
 }
 
 .charslide img {
@@ -2367,16 +2512,16 @@ main {
 }
 
 .charslide::-webkit-scrollbar {
-    height: 1vw; /* 스크롤바 높이 */
+    height: 1vw; 
 }
 
 .charslide::-webkit-scrollbar-thumb {
-    background-color: #FF5F1F; /* 스크롤바 색상 */
-    border-radius: 2vw; /* 스크롤바 모서리 둥글게 */
+    background-color: #FF5F1F; 
+    border-radius: 2vw; 
 }
 
 .charslide::-webkit-scrollbar-track {
-    background: #f1f1f1; /* 스크롤바 트랙 색상 */
+    background: #f1f1f1; 
 }
 
 
@@ -2386,6 +2531,7 @@ main {
 .video {
     padding: 10vw 6vw;
     background: #FFFDFC;
+    height: 60vw;
 }
 
 .video_char {
@@ -2413,6 +2559,12 @@ main {
 .video_balloon img {
     width: 15vw;
     padding-bottom: 3vw;
+}
+
+.service_video{
+    position: absolute;
+    margin: 12vw 0 0 -35vw;
+    width: 88vw;
 }
 
 
@@ -2689,7 +2841,7 @@ main {
     position: absolute;
     background: #FF5F1F;
     width: 100vw;
-    height: 27vw;
+    height: 32vw;
     z-index: 1;
 }
 
@@ -2723,4 +2875,169 @@ main {
     width: 30.3vw;
     height: 0.2vw;
     background: #ff5f1f;
+}
+
+
+
+
+
+/* page8 */
+
+.page8{
+    background: #FFFDFC;
+}
+
+.page8 .img_sec{
+    display: inline-flex;
+    width: 99.8vw;
+    margin: 0;
+    padding: 0;
+}
+
+.page8 .img_sec img{
+    height: calc(99.8vw/3);
+    margin: 0;
+    padding: 0;
+}
+
+.figma_page{
+    margin-top: -0.3vw;
+    padding: 10vw 6vw;
+    display: inline-flex;
+    height: 45vw;
+    width: 88vw;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* .figma_page .leftSide{
+    height: 50vw;
+
+} */
+
+.figma_page .leftSide .logo{
+    width: 5vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+.figma_page .leftSide .tit{
+    margin: 1vw 0 2vw 0;
+    font-size: 5.5vw;
+    font-weight: 800;
+    color: #FF5F1F;
+}
+
+.figma_page .leftSide .subtit{
+    margin-bottom: 1.5vw;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #817A7A;
+    line-height: 4vw;
+}
+
+.figmaBtn{
+    padding-right: 1vw;
+    border: 0.2vw #FF5F1F solid;
+    border-radius: 1.3vw;
+    background: #ffffff;
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 25vw;
+    height: 6.5vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.figmaBtn:hover{
+    box-shadow: 0 0 0.3vw 0.3vw #FF5F1F;
+}
+
+.figmaBtn img{
+    margin-left: 1vw;
+    width: 3vw;
+}
+
+.figmaBtn p{
+    color: #FF5F1F;
+}
+
+.mokup4{
+    margin: 3vw 0 0 1vw;
+    height: 90vw;
+}
+
+
+
+
+/* footer */
+
+footer{
+    height: 45vw;
+    background: #f7f7f7;
+    padding: 6vw;
+}
+
+footer .section_name{
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+.member{
+    display: inline-flex;
+    margin-top: 5vw;
+    width: 88vw;
+    justify-content: space-between;
+}
+
+.member img{
+    width: 15vw;
+}
+
+.mem{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mem .font_red{
+    margin: 2vw 0 0.5vw 0;
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+
+.mem_name{
+    margin-bottom: 0.5vw;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.mailto{
+    text-decoration: none;
+}
+
+.email{
+    font-size: 1.1vw;
+    font-weight: 300;
+    color: #817A7A;
+}
+
+.footer_bottom{
+    padding-top: 10vw;
+    display: inline-flex;
+    width: 88vw;
+    justify-content: space-between;
+}
+
+.src p{
+    font-weight: 300;
+    font-size: 0.9vw;
+    color: #929292;
+    line-height: 2vw;
+}
+
+.logogray{
+    width: 3.5vw;
 }
