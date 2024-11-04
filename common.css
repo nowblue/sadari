@@ -250,7 +250,7 @@ main {
 
 
 .page1 {
-    margin-top: 60vw;
+/*     margin-top: 60vw; */
     background: url("./img/page3bg.png");
     background-size: cover;
     text-align: center;
