@@ -135,6 +135,12 @@ nav {
     color: #FF5F1F;
 }
 
+.bold{
+    color: #817A7A;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
 
 
 /******************************************** main **************************************/
@@ -556,6 +562,13 @@ main {
     justify-content: space-evenly;
 }
 
+.etc{
+    margin-top: 0.5vw;
+    color: #B4B4B4;
+    font-size: 0.8vw;
+    font-weight: 300vw;
+}
+
 .barchart {
     height: 3vw;
     width: 24vw;
@@ -593,6 +606,7 @@ main {
     box-sizing: border-box;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
+    color: #929292;
     animation: graphIncrease2 2s 1 ease-in-out forwards;
 }
 
@@ -609,14 +623,14 @@ main {
     box-sizing: border-box;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
+    color: #929292;
     animation: graphIncrease3 2s 1 ease-in-out forwards;
 }
 
-.barchart.animate span,
+/* .barchart.animate span,
 .bar2chart.animate span {
     animation: graphIncrease 1s forwards;
-    /* 애니메이션 적용 */
-}
+} */
 
 @keyframes graphIncrease {
     0% {
@@ -1824,7 +1838,7 @@ main {
     line-height: 1.4vw;
 }
 
-.page7 .normal .bold {
+.page7 .normal .font_bold {
     color: #817A7A;
     font-size: 1.2vw;
     font-weight: 700;
@@ -1832,7 +1846,7 @@ main {
 
 .svg {
     position: absolute;
-    margin-top: -10vw;
+    margin-top: -24vw;
     width: 100vw;
     stroke-dasharray: 3000;
     stroke-dashoffset: -6000;
@@ -2366,7 +2380,7 @@ main {
     scroll-snap-align: start;
 }
 
-charslide::-webkit-scrollbar {
+.charslide::-webkit-scrollbar {
     height: 1vw; /* 스크롤바 높이 */
 }
 
@@ -2427,6 +2441,11 @@ charslide::-webkit-scrollbar {
 }
 
 .function_section .phone_mokup {
+    width: 20vw;
+    margin-right: 1vw;
+}
+
+.function_section .phone_mokup2 {
     width: 20vw;
     margin-right: 1vw;
 }
@@ -2531,35 +2550,56 @@ charslide::-webkit-scrollbar {
 }
 
 .function_2 .text_sec {
+    position: absolute;
     margin: 2vw 10vw 0 0;
+    z-index: 2;
 }
 
 .function_2 .pic_sec {
-    margin-right: 10vw;
+    margin-left:68vw;
 }
 
-.function_2 .pic_sec .charimg {
-    position: absolute;
-    margin: 12vw 0 0 -32vw;
-    transform: rotate(-50deg);
-    z-index: 1;
-    width: 27vw;
-}
+
 
 .function_2 .pic_sec .phone_mokup {
     position: absolute;
-    margin-left: -18vw;
+    margin-left: -21.5vw;
+    z-index: 2;
+}
+
+.function_2 .pic_sec .phone_mokup2 {
+    position: absolute;
     z-index: 2;
 }
 
 .function_2 .divide {
     position: absolute;
-    margin: 1.5vw 0 0 16vw;
-    width: 78vw;
+    margin: 1.5vw 0 0 20vw;
+    width: 74vw;
     height: 0.2vw;
+    background: #ffffff;
+    z-index: 2;
+}
+
+.function_2 .red {
+    margin: -7vw 0 0 -73.94vw;
+    position: absolute;
     background: #FF5F1F;
+    width: 100vw;
+    height: 27vw;
     z-index: 1;
 }
+
+.function_2 .font_red,
+.function_2 .subtit,
+.function_2 .normal {
+    color: #ffffff;
+}
+
+
+
+
+
 
 
 .function_3 {
@@ -2579,10 +2619,18 @@ charslide::-webkit-scrollbar {
     z-index: 1;
 }
 
-.function_3 .font_red,
-.function_3 .subtit,
-.function_3 .normal {
-    color: #ffffff;
+.function_3 .phone_mokup{
+    position: absolute;
+    margin-left: 20vw;    
+    z-index: 2;
+}
+
+.function_3 .pic_sec .charimg {
+    position: absolute;
+    margin: 12vw 0 0 5vw;
+    transform: rotate(-50deg);
+    z-index: 1;
+    width: 27vw;
 }
 
 .function_3box {
@@ -2599,31 +2647,36 @@ charslide::-webkit-scrollbar {
 
 .function_3 .divide {
     position: absolute;
-    margin: 1.5vw 0 0 10vw;
-    width: 30.3vw;
+    margin: 1.5vw 0 0 16.5vw;
+    width: 25vw;
     height: 0.2vw;
-    background: #ffffff;
+    background: #FF5F1F;
 }
 
 
 
 
 .function_4 {
-    margin: 5vw 6vw 5vw 6vw;
+    padding: 5vw 6vw 5vw 6vw;
     display: inline-flex;
     width: 88vw;
     height: 50vw;
     justify-content: space-between;
+    /* background: #FFFDFC; */
 }
+
 
 .function_4 .text_sec {
     margin: 2vw 10vw 0 0;
+    position: absolute;
+    /* margin-left: 47vw; */
+    z-index: 3;
 }
 
 .function_4 .pic_sec {
     position: absolute;
     margin-left: 47vw;
-    z-index: 2;
+    z-index: 3;
 }
 
 .function_4 .divide {
@@ -2632,7 +2685,7 @@ charslide::-webkit-scrollbar {
     width: 84vw;
     height: 0.2vw;
     background: #FF5F1F;
-    z-index: 1;
+    z-index: 2;
 }
 
 
