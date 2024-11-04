@@ -1846,7 +1846,7 @@ main {
 
 .svg {
     position: absolute;
-    margin-top: -24vw;
+    margin-top: -10vw;
     width: 100vw;
     stroke-dasharray: 3000;
     stroke-dashoffset: -6000;
