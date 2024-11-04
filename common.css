@@ -1,27 +1,4 @@
-.grid {
-    margin: 0px 6vw;
-    width: 88vw;
-    position: absolute;
-    display: inline-flex;
-    justify-content: space-between;
-    padding: 0;
-    z-index: 1;
-}
 
-.grid_bar {
-    /* padding-right: 40px; */
-    width: 9vw;
-    height: 700vw;
-    background: #ff0000;
-    opacity: 10%;
-    list-style: none;
-}
-
-
-
-/* body {
-    background: #FFFDFC;
-} */
 
 
 html {
@@ -1771,11 +1748,13 @@ main {
 }
 
 .painBalloon {
-    display: contents;
+    display: inline-grid;
+    justify-items: center;
 }
 
 .painBalloon2 {
-    display: contents;
+    display: inline-grid;
+    justify-items: center;
 }
 
 .changepersona2 {
