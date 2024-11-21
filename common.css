@@ -26,6 +26,8 @@ html {
 
 ::-webkit-scrollbar-track{
     width: 0px;
+    background-color: #FFFDFC; /* 스크롤 바의 색상 */
+
 }
 
 .nav-area {
@@ -184,11 +186,64 @@ main {
     margin: 0;
 }
 
-.mainImg {
+/* .mainImg {
     position: absolute;
     width: 40vw;
     z-index: 2;
+} */
+
+.mainImg1{
+    margin: 1vw 0 0 -4vw;
+    position: absolute;
+    width: 25vw;
+    z-index: 3;
+    animation: updown1 4s ease-in-out alternate infinite;
 }
+
+.mainImg2{
+    margin: 1vw 0 16vw 14vw;
+    position: absolute;
+    width: 23vw;
+    z-index: 2;
+    animation: updown2 4s ease-in-out  infinite;
+}
+
+@keyframes updown1{
+    0%{
+        top: 2vw;
+    }
+    25%{
+        top: 3vw;
+    }
+    50%{
+        top: 1vw;
+    }
+    75%{
+        top: 2.5vw;
+    }
+    100%{
+        top: 2vw;
+    }
+}
+
+@keyframes updown2{
+    0%{
+        top: 2vw;
+    }
+    25%{
+        top: 2.5vw;
+    }
+    50%{
+        top: 1.3vw;
+    }
+    75%{
+        top: 2.3vw;
+    }
+    100%{
+        top: 2vw;
+    }
+}
+
 
 .con1{
     position: absolute;
