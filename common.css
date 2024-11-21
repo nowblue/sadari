@@ -15,7 +15,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff5f1f; /* 스크롤 바의 색상 */
+    height: 3vw;
+}
+
+::-webkit-scrollbar-track{
+    width: 0px;
 }
 
 .nav-area {
@@ -123,7 +133,7 @@ main {
     position: relative;
     z-index: 2;
     /* background: #FFFDFC; */
-    width: 100vw;
+    width: 99.5vw;
     overflow: hidden;
 }
 
@@ -506,7 +516,7 @@ main {
 .ex1 {
     padding: 2vw;
     width: 27vw;
-    height: 20vw;
+    height: 20w;
     background: #ffffff;
     border: 0.13vw #FF5F1F solid;
     border-radius: 2vw;
@@ -908,7 +918,13 @@ main {
     overflow-x: auto;
     overflow-y: hidden;
     width: 94vw;
-    height: 22vw;
+    height: 23vw;
+}
+
+.scroll_container::-webkit-scrollbar {
+    /* display: none; */
+    /* width: 2vw; */
+    height: 0.5vw;
 }
 
 .scroll_wrap {
@@ -1983,7 +1999,7 @@ main {
 .svg {
     position: absolute;
     margin-top: -10vw;
-    width: 100vw;
+    width: 99.5vw;
     stroke-dasharray: 3000;
     stroke-dashoffset: -6000;
     animation: dash 4s cubic-bezier(0.43, 0.14, 0.5, 0.76) infinite;
@@ -2497,6 +2513,8 @@ main {
     padding: 0 6vw;
 }
 
+
+
 .charslide article{
     display: inline-flex;
     overflow-x: auto; 
@@ -2511,18 +2529,19 @@ main {
     scroll-snap-align: start;
 }
 
-.charslide::-webkit-scrollbar {
-    height: 1vw; 
+.charslide article::-webkit-scrollbar {
+    height: 0.5vw;
+    /* display: none; */
 }
 
-.charslide::-webkit-scrollbar-thumb {
+/* .charslide::-webkit-scrollbar-thumb {
     background-color: #FF5F1F; 
     border-radius: 2vw; 
-}
+} */
 
-.charslide::-webkit-scrollbar-track {
+/* .charslide::-webkit-scrollbar-track {
     background: #f1f1f1; 
-}
+} */
 
 
 
@@ -2723,7 +2742,7 @@ main {
     margin: -7vw 0 0 -73.94vw;
     position: absolute;
     background: #FF5F1F;
-    width: 100vw;
+    width: 99.5vw;
     height: 27vw;
     z-index: 1;
 }
@@ -2752,7 +2771,7 @@ main {
     margin: -7vw 0 0 -6vw;
     position: absolute;
     background: #FF5F1F;
-    width: 100vw;
+    width: 99.5vw;
     height: 27vw;
     z-index: 1;
 }
@@ -2840,7 +2859,7 @@ main {
     margin: 20vw 0 0 -6vw;
     position: absolute;
     background: #FF5F1F;
-    width: 100vw;
+    width: 99.5vw;
     height: 32vw;
     z-index: 1;
 }
@@ -3025,7 +3044,7 @@ footer .section_name{
 }
 
 .footer_bottom{
-    padding-top: 10vw;
+    padding-top: 9vw;
     display: inline-flex;
     width: 88vw;
     justify-content: space-between;
@@ -3042,24 +3061,44 @@ footer .section_name{
 .logogray{
     width: 3.5vw;
     height: 3.5vw;
-    margin-left: 50vw;
+    /* margin-left: 5vw; */
 }
 
 .download{
     text-decoration: none;
     text-align: center;
-    border-radius: 1vw;
+    border-radius: 0.5vw;
+    margin-left: 45vw;
     padding-top: 0.5vw;
-    line-height: 1.8vw;
-    font-size: 1.2vw;
+    line-height: 2vw;
+    font-size: 1vw;
     font-weight: 500;
-    width: 7vw;
-    height: 4.5vw;
-    background-color: #ffffff;
-    color: #7f7f7f;
+    width: 13vw;
+    height: 2.8vw;
+    background-color: #D9D9D9;
+    color: #696969;
 }
 
 .download:hover{
     background: #7f7f7f;
     color: #ffffff;
+}
+
+.portfolio{
+    margin-top: 1vw;
+    text-align: center;
+    text-decoration: none;
+    width: 7vw;
+    height: 3vw;
+    color: #FF5F1F;
+    background: #ffffff;
+    line-height: 2.8vw;
+    border-radius: 0.7vw;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.portfolio:hover{
+    color: #ffffff;
+    background: #FF5F1F;
 }
