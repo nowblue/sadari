@@ -338,3 +338,36 @@ balloon2.addEventListener("mouseleave", () => {
 
 
 
+
+// // const scrollContainer = document.getElementById('scrollContainer');
+// let isScrolling = false; // 스크롤 상태를 추적하는 변수
+
+// document.addEventListener('wheel', (event) => {
+//     const charSlide = document.querySelector('.charslide article');
+//     if (charSlide) {
+//         if (event.deltaY !== 0) {
+//             // 세로 스크롤이 가로 스크롤 중에 비활성화
+//             if (isScrolling) {
+//                 event.preventDefault(); // 기본 스크롤 방지
+//                 return; // 이미 스크롤 중이면 함수 종료
+//             }
+
+//             event.preventDefault(); // 기본 스크롤 방지
+//             isScrolling = true; // 스크롤 시작
+
+//             // 가로 스크롤
+//             charSlide.scrollBy({
+//                 left: event.deltaY < 0 ? -100 : 100, // 마우스 휠 방향에 따라 스크롤
+//                 behavior: 'smooth' // 부드러운 스크롤 효과
+//             });
+
+//             // 가로 스크롤이 끝날 때까지 기다림
+//             const scrollEnd = () => {
+//                 isScrolling = false; // 스크롤이 끝났음을 표시
+//                 charSlide.removeEventListener('scroll', scrollEnd); // 이벤트 리스너 제거
+//             };
+
+//             charSlide.addEventListener('scroll', scrollEnd);
+//         }
+//     }
+// });
