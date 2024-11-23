@@ -3012,6 +3012,7 @@ main {
 }
 
 .figmaBtn{
+    text-decoration: none;
     padding-right: 1vw;
     border: 0.2vw #FF5F1F solid;
     border-radius: 1.3vw;
@@ -3023,7 +3024,6 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
-    text-decoration: none;
 }
 
 .figmaBtn:hover{
