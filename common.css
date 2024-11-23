@@ -3011,6 +3011,11 @@ main {
     line-height: 4vw;
 }
 
+
+.figma_page a{
+    text-decoration: none;
+}
+
 .figmaBtn{
     text-decoration: none;
     padding-right: 1vw;
